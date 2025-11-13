@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    // --- Configuração de Saída ---
+    "outDir": "./dist/server", // Colocaremos a saída em uma pasta de build na raiz
+    "module": "CommonJS",
+    "target": "ES2020",
+
+    // --- Padrões do Node.js ---
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    // --- Rigor e Qualidade de Código ---
+    "strict": true
+  },
+  // Inclui apenas os arquivos necessários para o servidor
+  "include": [
+    "server/**/*.ts",
+    "shared/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
