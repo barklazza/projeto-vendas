@@ -1,0 +1,1 @@
+ALTER TABLE `sales` ADD `type` varchar(100) NOT NULL;
